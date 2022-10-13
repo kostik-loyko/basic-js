@@ -15,18 +15,18 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function countCats(matrix) {
-   let concatArray = matrix.reduce((prev, curr) => {
-      return prev.concat(curr)
-   }, [])
-   let result = concatArray.reduce((prev, curr) => {
-      if (curr === '^^') {
-         prev++
-      }
-      return prev
-   }, 0)
-   return result
+  let concatArray = matrix.reduce((prev, curr) => {
+    return prev.concat(curr)
+  }, [])
+  let result = concatArray.reduce((prev, curr) => {
+    if (curr === '^^') {
+      prev++
+    }
+    return prev
+  }, 0)
+  return result
 }
 
 module.exports = {
-   countCats
+  countCats
 };
